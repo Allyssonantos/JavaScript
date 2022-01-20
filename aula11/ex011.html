@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Migração</title>
+    
+    <style>
+        body{
+            background: rgb(131, 103, 103);
+        }
+        input{
+            background: white;
+        }
+    </style>
 </head>
 <body>
+    <h1> Sistema de Migração</h1>
+    Seu pais de origem: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+    </div>
+    <script>
+        function verificar() {
+            var txtpais = window.document.querySelector('input#txtpais')
+            var res = window.document.querySelector('div#resultado')
+            if (pais != 'Brasil'){
+                res.innerHTML += `<p>Você é estrengeiro!</p>`
+            } else {
+                res.innerHTML += `<p>Brasileiro!<p>`
+            }
+        }
+    </script>
+
     
 </body>
 </html>
