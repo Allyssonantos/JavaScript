@@ -18,3 +18,7 @@ footer {
     text-align: center;
     font-style: italic;
 }
+
+img    {
+    border-radius: 50%;
+}
