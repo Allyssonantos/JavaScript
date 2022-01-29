@@ -5,5 +5,7 @@ function contar() {
 
     if (ini.valule.length == 0 || fim.valule.length == 0 || passo.valule.length == 0) {
         window.alert('[ERRO] Faltam dados!')
-    } else
+    } else {
+        alert('TUDO OK!')
+    }
 }
